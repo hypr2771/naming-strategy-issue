@@ -1,0 +1,12 @@
+spring:
+  jpa:
+    database: HSQL
+    hibernate:
+      ddl-auto: create-drop
+      naming:
+        physical-strategy: net.bugreport.domain.strategies.NamingStrategy
+
+    show-sql: true
+
+  jackson:
+    property-naming-strategy: SNAKE_CASE
